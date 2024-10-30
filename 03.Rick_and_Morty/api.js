@@ -22,8 +22,8 @@ const charactersContainer = document.getElementById('characters')
        const characterCards = data.results.map(character => {
             // template string para tener html y javascript
         return `
-            <div class="col-md-3 mb-3">
-                <div className="card h-100">
+          <div class="col-md-3 mb-3">
+            <div class="card h-100">
                 <img src=${character.image} alt=${character.name} class="card-img-top">
                     <div class="card-body">
                         <h3 class="card-title">${character.name}</h3>
