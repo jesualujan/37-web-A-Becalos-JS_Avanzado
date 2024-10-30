@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CUSTOM CSS -->
+     <link rel="stylesheet" href="css/main.css">
+    <title>Rick and Morty</title>
+</head>
+<body>
+    
+ <div class="container mt-4">
+    <h1 class="text-center">Rick and Morty Characters</h1>
+
+    <!-- Search Bar -->
+     <div class="row justify-content-center mb-4">
+        <div class="col-md-6">
+            <div class="input-group">
+                <input type="text" id="search" class="form-control" placeholder="Buscar Personaje">
+            </div>
+        </div>
+     </div>
+
+
+   <!-- Characters List -->
+     <div id="characters" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 justify-content-center">
+        <!-- voy a mostar los datos desde mi archivo javascipt llamado api-->
+     </div>
+
+ </div>
+
+      <!-- Footer -->
+                 <footer>
+                    <p>&copy; 2024 Rick and Morty Characters || make it with ❤️ and ☕ </p>
+                 </footer>
+
+
+
+    
+         <!-- BOOTSTRAP JS -->
+         <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+         <!-- CUSTOM JS -->
+          <script async src="api.js"></script>
+</body>
+</html>
