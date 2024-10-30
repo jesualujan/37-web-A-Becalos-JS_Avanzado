@@ -1,16 +1,17 @@
-/* Reset default padding and margin */
 * {
     padding: 0;
     margin: 0;
 }
 
 body {
-    background-color: #f8f9fa;
+    background: #C9D6FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     display: flex;
     text-align: center;
     flex-direction: column;
     align-items: center;
-    min-height: 100vh; /* Ensure content fills the viewport */
+    min-height: 100vh; 
 }
 
 h1 {
@@ -19,21 +20,21 @@ h1 {
 }
 
 #search {
-    border-radius: 5px; /* Rounded corners */
-    border: 1px solid #ccc; /* Light border */
-    padding: 10px; /* Padding for better readability */
-    font-size: 16px; /* Font size for better visibility */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 5px; 
+    border: 1px solid #ccc; 
+    padding: 10px; 
+    font-size: 16px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
 #search:focus {
-    border-color: #007bff; /* Blue border on focus */
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Blue shadow on focus */
+    border-color: #007bff; 
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
 .input-group {
     max-width: 600px;
-    margin-bottom: 40px; /* Add margin to separate from cards */
+    margin-bottom: 40px;
 }
 
 .card-container {
@@ -46,18 +47,18 @@ h1 {
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    transition: transform 0.3s; /* Smooth transition for hover effect */
+    transition: transform 0.3s; 
 }
 
 .card:hover {
-    transform: translateY(-10px); /* Elevate card on hover */
+    transform: translateY(-10px); 
 }
 
 .card-body {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center content vertically within the card */
-    text-align: center; /* Center text within the card body */
+    align-items: center; 
+    text-align: center; 
 }
 
 .card-title {
@@ -69,18 +70,19 @@ h1 {
 .card-text {
     color: #6c757d;
 }
+
 footer {
     width: 100%;
-    background-color: #343a40; /* Darker background for footer */
+    background-color: #343a40; 
     color: white;
-    padding: 20px 0; /* Padding for better readability */
+    padding: 20px 0; 
     text-align: center;
     position: relative;
-    margin-top: auto; /* Push the footer to the bottom of the page */
+    margin-top: auto; 
 }
 
 footer p {
-    margin: 0; /* Remove default margin */
+    margin: 0; 
 }
 
 footer a {
@@ -89,5 +91,5 @@ footer a {
 }
 
 footer a:hover {
-    text-decoration: underline; /* Underline links on hover */
+    text-decoration: underline; 
 }
