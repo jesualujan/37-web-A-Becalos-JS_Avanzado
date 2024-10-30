@@ -1,7 +1,8 @@
+/* Reset default padding and margin */
 * {
     padding: 0;
     margin: 0;
-  }
+}
 
 body {
     background-color: #f8f9fa;
@@ -9,72 +10,84 @@ body {
     text-align: center;
     flex-direction: column;
     align-items: center;
-    min-height: 100vh; /* To ensure content fills the viewport */
-  }
-  
-  h1 {
+    min-height: 100vh; /* Ensure content fills the viewport */
+}
+
+h1 {
     color: #343a40;
     margin-bottom: 40px;
-  }
-  
-  #search {
+}
+
+#search {
     border-radius: 5px; /* Rounded corners */
     border: 1px solid #ccc; /* Light border */
     padding: 10px; /* Padding for better readability */
     font-size: 16px; /* Font size for better visibility */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  }
-  
-  #search:focus {
+}
+
+#search:focus {
     border-color: #007bff; /* Blue border on focus */
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Blue shadow on focus */
-  }
+}
 
-  .input-group {
+.input-group {
     max-width: 600px;
     margin-bottom: 40px; /* Add margin to separate from cards */
-  }
-  .card-container {
+}
+
+.card-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 20px;
-  }
-  
-  .card {
-    /* Estilos de las tarjetas */
+}
+
+.card {
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
-  }
-  .card:hover {
-    transform: translateY(-10px);
-  }
-  
-  .card-body {
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Elevate card on hover */
+}
+
+.card-body {
     display: flex;
     flex-direction: column;
-    border-style:double;
     align-items: center; /* Center content vertically within the card */
-  }
-  
-  .card-title {
+    text-align: center; /* Center text within the card body */
+}
+
+.card-title {
     font-size: 1.25rem;
     color: #17a2b8;
     margin-bottom: 10px;
-  }
-  
-  .card-text {
+}
+
+.card-text {
     color: #6c757d;
+}
+footer {
+    width: 100%;
+    background-color: #343a40; /* Darker background for footer */
+    color: white;
+    padding: 20px 0; /* Padding for better readability */
     text-align: center;
-  }
-  
-  footer {
-  width: 100%;
-  height: 5px;
-  position: fixed;
-  margin-top: 10px;
-  bottom: 0;
-  background-color: black;
-  color: white;
-  padding: 1%;
-  }
+    position: relative;
+    margin-top: auto; /* Push the footer to the bottom of the page */
+}
+
+footer p {
+    margin: 0; /* Remove default margin */
+}
+
+footer a {
+    color: #17a2b8;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline; /* Underline links on hover */
+}
