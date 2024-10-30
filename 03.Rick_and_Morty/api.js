@@ -25,7 +25,7 @@ const charactersContainer = document.getElementById('characters')
           <div class="col-md-3 mb-3">
             <div class="card h-100">
                 <img src=${character.image} alt=${character.name} class="card-img-top">
-                    <div class="card-body">
+                    <div class="card-body"> 
                         <h3 class="card-title">${character.name}</h3>
                         <h4 class="card-text">
                             <span class="text-muted">Id:</span>${character.id} <br>
