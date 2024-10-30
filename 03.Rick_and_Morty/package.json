@@ -1,0 +1,15 @@
+{
+  "name": "03.rick_and_morty",
+  "version": "1.0.0",
+  "main": "api.js",
+  "scripts": {
+    "start": "node api.js "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "fetch": "^1.1.0"
+  }
+}
