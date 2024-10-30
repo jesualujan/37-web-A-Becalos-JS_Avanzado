@@ -49,6 +49,7 @@ const processData = (data) => {
         origin: dog.origin,
         image: dog.image ? dog.image.url : 'No imagen disponible'
     }))
+    // muestra los datos relevantes en la consola
     console.log(relevantData)
     return relevantData
 }
